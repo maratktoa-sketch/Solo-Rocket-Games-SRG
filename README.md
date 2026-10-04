@@ -2,8 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solo Rocket Games (SRG) — Pulse World, Argus Core и другие проекты</title>
-    <meta name="description" content="Solo Rocket Games — независимая студия. Pulse World, Argus Core, TechBeats и другие проекты.">
+    <title>Solo Rocket Games (SRG) — Pulse World, Argus Core, Horror at the School и NekitDrop</title>
+    <meta name="description" content="Solo Rocket Games — независимая студия. Pulse World, Argus Core, Horror at the School и NekitDrop — бесплатная браузерная рулетка персонажей.">
     <style>
         * {
             margin: 0;
@@ -23,27 +23,6 @@
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 0 30px rgba(255, 80, 80, 0.06);
-        }
-        .disclaimer-banner {
-            background: #1f0f0f;
-            border: 2px solid #ff4444;
-            border-radius: 14px;
-            padding: 18px 25px;
-            margin-bottom: 30px;
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #ff8888;
-            letter-spacing: 0.5px;
-            box-shadow: 0 0 25px rgba(255, 68, 68, 0.15);
-        }
-        .disclaimer-banner strong { color: #ff6666; }
-        .disclaimer-banner span {
-            background: #2a0f0f;
-            padding: 3px 12px;
-            border-radius: 30px;
-            border: 1px solid #ff4444;
-            margin: 0 6px;
         }
         .header {
             display: flex;
@@ -120,6 +99,8 @@
         }
         .game-description.argus-specs { border-left-color: #44aaff; }
         .game-description.argus-specs strong { color: #44aaff; }
+        .game-description.nekit { border-left-color: #aa66ff; }
+        .game-description.nekit strong { color: #aa66ff; }
         .game-meta {
             display: flex;
             flex-wrap: wrap;
@@ -202,30 +183,12 @@
             color: #dd99ff;
         }
         .btn-horror:hover { background: #3a2a3a; }
-        .btn-support {
-            background: #1a2a2a;
-            border: 2px solid #ffaa00;
-            color: #ffdd88;
+        .btn-nekit {
+            background: #1a0f2a;
+            border: 2px solid #aa66ff;
+            color: #cc99ff;
         }
-        .btn-support:hover { background: #2a3a2a; }
-        .btn-steam {
-            background: #1b2838;
-            border: 2px solid #66b3ff;
-            color: #c7d5e0;
-        }
-        .btn-steam:hover { background: #2a3f5a; }
-        .btn-itch {
-            background: #2a1a1a;
-            border: 2px solid #ff6666;
-            color: #ffaaaa;
-        }
-        .btn-itch:hover { background: #3d2222; }
-        .btn-site {
-            background: #1a2a1a;
-            border: 2px solid #ff8844;
-            color: #ffcc88;
-        }
-        .btn-site:hover { background: #223d22; }
+        .btn-nekit:hover { background: #2a1a3a; }
         .warning-yellow {
             color: #ffaa44;
             background: #1f1a0f;
@@ -269,23 +232,10 @@
             color: #66ff99;
             border: 1px solid #66ff99;
         }
-        .badge-blue {
-            background: #1a1a2a;
-            color: #66aaff;
-            border: 1px solid #66aaff;
-        }
-        .badge-red {
-            background: #2a1a1a;
-            color: #ff6666;
-            border: 1px solid #ff6666;
-        }
-        .secret-text {
-            color: #ff44aa;
-            text-shadow: 0 0 20px rgba(255, 68, 170, 0.3);
-            font-style: italic;
-            text-align: center;
-            font-size: 1.5rem;
-            padding: 40px 0;
+        .badge-purple {
+            background: #1a0f2a;
+            color: #aa66ff;
+            border: 1px solid #aa66ff;
         }
         .argus-features {
             display: grid;
@@ -318,15 +268,6 @@
 <body>
 <div class="container">
 
-    <!-- БАННЕР-ПРЕДУПРЕЖДЕНИЕ -->
-    <div class="disclaimer-banner">
-        ⚡ <strong>ВАЖНО:</strong>  
-        <span>Solo Rocket Games (SRG)</span>  
-        — это совершенно новая студия.  
-        Мы <strong>НЕ ИМЕЕМ</strong> никакого отношения к TrioGames.  
-        Это наш собственный путь, наши проекты, наша ответственность.
-    </div>
-
     <!-- ШАПКА -->
     <div class="header">
         <div class="logo">
@@ -335,7 +276,8 @@
         </div>
         <div>
             <span class="badge">🛸 В разработке</span>
-            <span class="badge badge-green">Pulse World: 2027</span>
+            <span class="badge badge-green">Pulse World: 2032</span>
+            <span class="badge badge-purple">NekitDrop: уже играют</span>
         </div>
     </div>
 
@@ -344,13 +286,10 @@
         <div class="game-tab active" data-game="pulse">🌍 Pulse World</div>
         <div class="game-tab" data-game="argus">🛡️ Argus Core</div>
         <div class="game-tab" data-game="horror">🏫 Horror at the School</div>
-        <div class="game-tab" data-game="zombie">🧟 Зомби Космос</div>
-        <div class="game-tab" data-game="techbeats">⚙️ TechBeats</div>
+        <div class="game-tab" data-game="nekit">🎰 NekitDrop</div>
     </div>
 
-    <!-- ============================================================ -->
     <!-- PULSE WORLD -->
-    <!-- ============================================================ -->
     <div id="game-pulse" class="game-content">
         <div class="game-title">🌍 <span>Pulse World</span> 🤖</div>
         <div class="game-description">
@@ -364,17 +303,15 @@
         <div class="game-meta">
             <span class="game-meta-item"><strong>🎮 Жанр:</strong> 3D-приключение / Платформер</span>
             <span class="game-meta-item"><strong>👥 Игроков:</strong> 1 (мультиплеер в обновлении 2)</span>
-            <span class="game-meta-item"><strong>📅 Выход:</strong> 2027</span>
+            <span class="game-meta-item"><strong>📅 Выход:</strong> 2032</span>
             <span class="game-meta-item"><strong>🎨 Студия:</strong> Solo Rocket Games (SRG)</span>
         </div>
         <div class="download-buttons">
-            <a href="#" class="btn btn-pulse">💾 Скачать Pulse World на ПК</a>
+            <a href="#" class="btn btn-pulse">💾 Скачать Pulse World</a>
         </div>
     </div>
 
-    <!-- ============================================================ -->
     <!-- ARGUS CORE -->
-    <!-- ============================================================ -->
     <div id="game-argus" class="game-content hidden">
         <div class="game-title">🛡️ <span>Argus Core</span> 💻</div>
         <div class="game-description argus-specs">
@@ -399,7 +336,7 @@
             📱 <strong>Telegram:</strong> <a href="https://t.me/ymarat123tube" style="color: #44aaff;" target="_blank">t.me/ymarat123tube</a>
         </div>
         <div class="game-meta">
-            <span class="game-meta-item"><strong>📅 Выход:</strong> Конец 2027 – начало 2028</span>
+            <span class="game-meta-item"><strong>📅 Выход:</strong> 2031</span>
             <span class="game-meta-item"><strong>🎨 Студия:</strong> Solo Rocket Games (SRG)</span>
         </div>
         <div class="download-buttons">
@@ -408,9 +345,7 @@
         </div>
     </div>
 
-    <!-- ============================================================ -->
     <!-- HORROR AT THE SCHOOL -->
-    <!-- ============================================================ -->
     <div id="game-horror" class="game-content hidden">
         <div class="game-title">🏫 <span>Horror at the School</span> 👻</div>
         <div class="game-description">
@@ -432,57 +367,30 @@
         </div>
         <div class="game-meta">
             <span class="game-meta-item"><strong>🎮 Жанр:</strong> Психологический хоррор</span>
-            <span class="game-meta-item"><strong>📅 Выход:</strong> 2028</span>
+            <span class="game-meta-item"><strong>📅 Выход:</strong> 2033</span>
             <span class="game-meta-item"><strong>🎨 Студия:</strong> Solo Rocket Games (SRG)</span>
         </div>
         <div class="download-buttons">
-            <a href="#" class="btn btn-horror">⬇️ Скачать Horror at the School на ПК</a>
+            <a href="#" class="btn btn-horror">⬇️ Скачать Horror at the School</a>
         </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- ЗОМБИ КОСМОС (TrioGames) -->
-    <!-- ============================================================ -->
-    <div id="game-zombie" class="game-content hidden">
-        <div class="game-title">🧟 <span>Зомби Космос</span> 🌍</div>
-        <div class="game-description" style="border-left-color: #ff4444;">
-            <strong>⚠️ Этот проект создан студией TrioGames.</strong>
+    <!-- NEKITDROP -->
+    <div id="game-nekit" class="game-content hidden">
+        <div class="game-title">🎰 <span>NekitDrop</span> 🐸</div>
+        <div class="game-description nekit">
+            <strong>NekitDrop — бесплатная браузерная рулетка персонажей.</strong>
             <br><br>
-            Solo Rocket Games (SRG) не имеет отношения к разработке этой игры. Однако мы с уважением относимся к труду разработчиков TrioGames и готовы поддержать их проект.
-            <br><br>
-            📌 <strong>Официальная страница игры появится позже. Следите за новостями.</strong>
+            Без CS, без доната, без регистрации. Крути, собирай коллекцию, продавай, выполняй квесты и открывай достижения. Просто рофл.
         </div>
         <div class="game-meta">
-            <span class="game-meta-item"><strong>🎮 Жанр:</strong> Выживание / Action</span>
-            <span class="game-meta-item"><strong>🎨 Студия:</strong> TrioGames</span>
-            <span class="game-meta-item"><strong>📅 Выход:</strong> Неизвестно</span>
-        </div>
-        <div class="warning-yellow">
-            ⏳ <strong>Ссылка на игру появится позже.</strong>  
-            Следите за обновлениями на этой странице или в Telegram-канале SRG.
-        </div>
-    </div>
-
-    <!-- ============================================================ -->
-    <!-- TECHBEATS -->
-    <!-- ============================================================ -->
-    <div id="game-techbeats" class="game-content hidden">
-        <div class="game-title">⚙️ <span>TechBeats</span> 🎧</div>
-        <div class="game-description" style="border-left-color: #ffaa00;">
-            <strong>«Техно-Звери» — анимационный сериал о войне между ожившей техникой.</strong>
-            <br><br>
-            Микроволновки, пылесосы, колонки, утюги и планшеты сражаются в обычной квартире. Короткие серии, экшен, неожиданные повороты и чёрный юмор.
-        </div>
-        <div class="game-meta">
-            <span class="game-meta-item"><strong>🎬 Жанр:</strong> Анимационный сериал / Экшен / Чёрный юмор</span>
-            <span class="game-meta-item"><strong>📅 Выход:</strong> 2030</span>
+            <span class="game-meta-item"><strong>🎮 Жанр:</strong> Браузерная рулетка / Коллекционирование</span>
+            <span class="game-meta-item"><strong>💰 Цена:</strong> Бесплатно</span>
+            <span class="game-meta-item"><strong>📅 Выход:</strong> Уже доступно</span>
             <span class="game-meta-item"><strong>🎨 Студия:</strong> Solo Rocket Games (SRG)</span>
         </div>
         <div class="download-buttons">
-            <a href="https://vt.tiktok.com/ZSVS2Pheg/" target="_blank" class="btn btn-support">💰 Поддержать</a>
-        </div>
-        <div style="text-align: center; margin: 10px 0 20px 0; color: #8899aa; font-size: 0.95rem;">
-            💬 Если вам понравился проект, поставьте лайк и поделитесь с друзьями!
+            <a href="https://maratktoa-sketch.github.io/nekitDrop/" target="_blank" class="btn btn-nekit">🎮 Играть</a>
         </div>
     </div>
 
@@ -490,9 +398,8 @@
     <div class="footer">
         <p>© 2026 <strong>Solo Rocket Games (SRG)</strong> — все права защищены.</p>
         <p style="margin-top: 8px;">
-            <a href="#">GitHub</a> · 
-            <a href="#">Telegram</a> · 
-            <a href="#">YouTube</a>
+            <a href="https://t.me/ymarat123tube" target="_blank">Telegram</a> · 
+            <a href="https://www.tiktok.com/@maratmegaladon" target="_blank">TikTok</a>
         </p>
     </div>
 </div>
@@ -503,8 +410,7 @@
         pulse: document.getElementById('game-pulse'),
         argus: document.getElementById('game-argus'),
         horror: document.getElementById('game-horror'),
-        zombie: document.getElementById('game-zombie'),
-        techbeats: document.getElementById('game-techbeats')
+        nekit: document.getElementById('game-nekit')
     };
 
     tabs.forEach(tab => {
@@ -517,5 +423,6 @@
         });
     });
 </script>
+
 </body>
 </html>
